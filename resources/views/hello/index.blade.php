@@ -1,12 +1,6 @@
-<table>
-    @foreach ($data as $item)
-        <tr>
-            <th>
-                {{ $item['name'] }}
-            </th>
-            <td>
-                {{ $item['mail'] }}
-            </td>
-        </tr>
-    @endforeach
-</table>
+@extends('layouts.index')
+
+@section('content')
+        <middleware>google.com</middleware>へのリンクです
+        <middleware>yahoo.co.jp</middleware>へのリンクです
+@endsection

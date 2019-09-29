@@ -13,4 +13,4 @@ use App\Http\Middleware\HelloMiddleware;
 */
 
 Route::get('hello', 'HelloController@index')
-    ->middleware(HelloMiddleware::class);
+    ->middleware('helo');
