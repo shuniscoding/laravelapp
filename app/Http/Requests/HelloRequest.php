@@ -28,9 +28,9 @@ class HelloRequest extends FormRequest
     public function rules()
     {
         return [
-            'name.' => 'required',
+            'name' => 'required',
             'mail' => 'email',
-            'age' => 'numeric|between:0,150',
+            'age' => 'numeric|hello',
         ];
     }
 
@@ -41,6 +41,9 @@ class HelloRequest extends FormRequest
     {
         return [
             'name.required' => '名前は必ず入力してください。',
+            'mail.email' => 'メールアドレスが必要です。',
+            'age.numeric' => '整数で記入してね。',
+            'age.hello' => 'Hello! 偶数のみおｋ',
         ];
     }
 }
