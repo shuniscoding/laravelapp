@@ -16,3 +16,4 @@ Route::get('/', 'TopController@index');
 
 Route::get('hello', 'HelloController@index');
 Route::post('hello', 'HelloController@post');
+Route::view('slick', 'slick');
